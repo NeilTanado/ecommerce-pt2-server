@@ -6,8 +6,8 @@ var logger = require('morgan');
 var cors = require('cors');
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/mongoose-ecommerce2');
-// mongoose.connect('mongodb://admin:asd@ds233500.mlab.com:33500/e-commerce-neil');
+// mongoose.connect('mongodb://localhost/mongoose-ecommerce2');
+mongoose.connect('mongodb://superadmin:admin123@ds125381.mlab.com:25381/ecommerce2');
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
