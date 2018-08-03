@@ -4,12 +4,12 @@ const Multer = require('multer');
 
 
 //nama folder atau file di GCS
-const BUCKET_CONFIG = "ecommercehp";
+const BUCKET_CONFIG = "image-ecommerce-hacktiv";
 
 
 const storage = Storage({
   projectId: "ecommerce-hacktiv",
-  keyFilename: 'ecommerce-hacktiv-4870e897fd7f.json'
+  keyFilename: 'keyfile.json'
 });
 
 const bucket = storage.bucket(BUCKET_CONFIG);
